@@ -62,7 +62,7 @@ a:focus {
     border-top: 1px solid rgba(255, 255, 255, .2);
 }
 
-.navbar-expand-md .navbar-nav .nav-item:first-child{
+.navbar-expand-md .navbar-nav .nav-item:first-child {
     border-top: none;
 }
 
@@ -85,7 +85,7 @@ a:focus {
 }
 
 .navbar-expand-md .navbar-nav .nav-link:hover i,
-.navbar-expand-md .navbar-nav .nav-link.active i{
+.navbar-expand-md .navbar-nav .nav-link.active i {
     color: #ffffff;
 }
 
@@ -102,7 +102,7 @@ a:focus {
     .wrapper .content {
         padding: 30px 0px 30px 30px;
     }
-    
+
     .wrapper .content::before,
     .wrapper .content::after {
         position: fixed;
@@ -112,15 +112,15 @@ a:focus {
         background: #F6D155;
         z-index: 1;
     }
-    
+
     .wrapper .content::before {
         top: 0;
     }
-    
+
     .wrapper .content::after {
         bottom: 0;
     }
-    
+
     .wrapper .sidebar {
         position: fixed;
         width: 300px;
@@ -136,15 +136,15 @@ a:focus {
     .wrapper .sidebar:hover {
         margin-left: 0px;
     }
-    
+
     .wrapper .content {
         position: relative;
         width: calc(100% - 50px);
         margin-left: 50px;
         float: right;
     }
-    
-    .wrapper .sidebar:hover  .sidebar-header {
+
+    .wrapper .sidebar:hover .sidebar-header {
         position: relative;
         display: block;
         width: 100%;
@@ -154,26 +154,26 @@ a:focus {
         width: 100%;
         height: auto;
     }
-    
+
     .navbar-brand {
         display: none;
     }
-    
+
     .navbar {
         padding: 15px 0;
         flex-direction: column;
     }
-    
+
     .wrapper .sidebar:hover .navbar-expand-md .navbar-nav .nav-link {
         padding: 5px 30px 7px 30px;
     }
-    
+
     .wrapper .sidebar::-webkit-scrollbar {
         width: 7px;
     }
 
     .wrapper .sidebar::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
     }
 
     .wrapper .sidebar::-webkit-scrollbar-thumb {
@@ -181,11 +181,11 @@ a:focus {
         outline: 1px solid slategrey;
         border-radius: 7px
     }
-    
+
     .navbar-brand {
         display: none;
     }
-    
+
     .sidebar .sidebar-footer {
         width: 300px;
         position: fixed;
@@ -195,7 +195,7 @@ a:focus {
         text-align: center;
         background: #222222;
     }
-    
+
     .sidebar .sidebar-footer a {
         display: inline-block;
         width: 40px;
@@ -207,16 +207,16 @@ a:focus {
         color: #222222;
         background: #FF6F61;
     }
-    
+
     .sidebar .sidebar-footer a:last-child {
         margin-right: 0;
     }
-    
+
     .sidebar .sidebar-footer a:hover {
         color: #FF6F61;
         background: #ffffff;
     }
-    
+
     .sidebar:hover .sidebar-footer {
         display: block;
     }
@@ -237,11 +237,11 @@ a:focus {
         display: block;
         width: 100%;
     }
-    
+
     .navbar-expand-md .navbar-nav .nav-link {
         padding: 5px 30px 7px 30px;
     }
-    
+
     .sidebar .sidebar-footer {
         display: block;
     }
@@ -284,18 +284,28 @@ a:focus {
 }
 
 .back-to-top {
-    -webkit-animation: action 1s infinite  alternate;
-    animation: action 1s infinite  alternate;
+    -webkit-animation: action 1s infinite alternate;
+    animation: action 1s infinite alternate;
 }
 
 @-webkit-keyframes action {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-15px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
 }
 
 @keyframes action {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-15px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
 }
 
 
@@ -409,9 +419,17 @@ a:focus {
     background: #FF6F61;
 }
 
-.content-inner .about-text p{
+.content-inner .about-text p {
 
     padding: 5px;
+}
+
+@media(max-width: 699px) {
+    .header .content-inner {
+        padding: 100px 30px;
+        background: white;
+        background-size: contain;
+    }
 }
 
 /* about css */
@@ -728,13 +746,13 @@ a:focus {
     height: 220px;
     position: relative;
     border-radius: 0;
-    margin: 0; 
+    margin: 0;
 }
 
 .portfolio .portfolio-item figure img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .portfolio .portfolio-item figure:hover img {
@@ -911,4 +929,3 @@ a:focus {
     color: #FF6F61;
     background: #222222;
 }
-
