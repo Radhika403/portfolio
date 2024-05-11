@@ -317,7 +317,7 @@ a:focus {
 
 .header .content-inner {
     padding: 100px 30px;
-    background: url(../img/profile.png) right bottom no-repeat;
+    background: url(./img/profile.png) right 10px bottom no-repeat;
     background-size: contain;
 }
 
